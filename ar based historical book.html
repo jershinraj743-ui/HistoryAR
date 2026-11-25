@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HistoryAR - Explore the Past</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #111c30;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #f5b942;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+nav a:hover {
+    color: #f5b942;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #101d36, #243d62);
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #f5b942;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #f5b942;
+    color: #101827;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+h2 {
+    text-align: center;
+    color: #f5b942;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    color: #d4d9e2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #17243b;
+    padding: 28px;
+    border-radius: 15px;
+    border: 1px solid #30435f;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #f5b942;
+}
+
+.card h3 {
+    color: #f5b942;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #d4d9e2;
+}
+
+.alt {
+    background: #111c30;
+}
+
+.steps {
+    text-align: center;
+}
+
+.steps h3 {
+    color: #f5b942;
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background: #080e19;
+    text-align: center;
+    padding: 25px;
+    color: #aab3c2;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 7px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HistoryAR</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+    <div>
+        <h1>HistoryAR</h1>
+
+        <h2>Explore the Past</h2>
+
+        <p>
+        Don't Just Read History. Experience It!
+        </p>
+
+        <p>
+        Transforming traditional history textbooks
+        into interactive 3D learning experiences
+        through Augmented Reality.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About HistoryAR</h2>
+
+<p class="intro">
+HistoryAR is an innovative Augmented Reality based
+educational solution designed to make history learning
+more engaging, visual and interactive.
+
+Students can scan textbook images using their mobile
+cameras and explore historical kings, monuments and
+objects through 3D models, animations and audio explanations.
+</p>
+
+</section>
+
+<!-- PROBLEM -->
+
+<section class="alt" id="problem">
+
+<h2>Problem Statement</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Limited Visualization</h3>
+<p>Students find it difficult to imagine ancient kings,
+monuments and historical events.</p>
+</div>
+
+<div class="card">
+<h3>Traditional Learning</h3>
+<p>Textbook-based learning provides limited
+interactive experiences.</p>
+</div>
+
+<div class="card">
+<h3>Lack of Interest</h3>
+<p>Text-heavy content can make history boring
+and less engaging.</p>
+</div>
+
+<div class="card">
+<h3>Memory Challenges</h3>
+<p>Students may struggle to remember historical
+information through memorization alone.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SOLUTION -->
+
+<section id="solution">
+
+<h2>Our Solution</h2>
+
+<p class="intro">
+HistoryAR bridges the gap between traditional education
+and modern technology by converting textbook images
+into interactive Augmented Reality experiences.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Scan Textbook</h3>
+<p>Scan historical images using a mobile camera.</p>
+</div>
+
+<div class="card">
+<h3>AR Recognition</h3>
+<p>The application recognizes the scanned textbook images.</p>
+</div>
+
+<div class="card">
+<h3>Explore 3D Models</h3>
+<p>View and interact with historical objects in 3D.</p>
+</div>
+
+<div class="card">
+<h3>Audio Learning</h3>
+<p>Listen to explanations and learn historical facts easily.</p>
+</div>
+
+</div>
+</section>
+
+<!-- FEATURES -->
+
+<section class="alt" id="features">
+
+<h2>Key Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📱 AR Technology</h3>
+<p>Augmented Reality-based interactive learning.</p>
+</div>
+
+<div class="card">
+<h3>🏛️ 3D Visualization</h3>
+<p>Explore ancient kings, temples and monuments.</p>
+</div>
+
+<div class="card">
+<h3>🎧 Audio Explanation</h3>
+<p>Understand historical topics through audio guidance.</p>
+</div>
+
+<div class="card">
+<h3>🔄 Interactive Models</h3>
+<p>Rotate and examine historical models from different angles.</p>
+</div>
+
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section>
+
+<h2>How It Works</h2>
+
+<div class="cards">
+
+<div class="card steps">
+<h3>01. Scan</h3>
+<p>Open the app and scan a textbook image.</p>
+</div>
+
+<div class="card steps">
+<h3>02. Recognize</h3>
+<p>AR technology identifies the image.</p>
+</div>
+
+<div class="card steps">
+<h3>03. Explore</h3>
+<p>Discover interactive 3D historical models.</p>
+</div>
+
+<div class="card steps">
+<h3>04. Learn</h3>
+<p>Listen to audio and understand history.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="alt contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+Interested in making history more interactive?
+<br><br>
+Connect with the HistoryAR Project Team.
+</p>
+
+<p style="margin-top:20px;">
+<strong>Project:</strong> HistoryAR – Explore the Past
+<br>
+<strong>Institution:</strong> Jeppiaar Institute of Technology
+<br>
+<strong>Department:</strong> Computer Science and Engineering
+</p>
+
+<a href="mailto:arvr46517@gmail.com" class="btn">
+Contact Our Team
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 HistoryAR – Explore the Past.</p>
+<p>Bringing History to Life Through Augmented Reality.</p>
+</footer>
+
+</body>
+</html>
